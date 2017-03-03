@@ -2,7 +2,6 @@ FROM ubuntu:12.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN apt-get update -y && apt-get install -y software-properties-common python-software-properties python3-software-properties
 RUN add-apt-repository universe
 RUN apt-get update -y && apt-get install -y vim xterm pulseaudio curl libgconf2-4 libnss3-1d libxss1 wget xdg-utils libpango1.0-0 fonts-liberation
 
@@ -10,7 +9,7 @@ RUN apt-get update -y && apt-get install -y vim xterm pulseaudio curl libgconf2-
 ENV NOMACHINE_PACKAGE_NAME nomachine_5.2.11_1_amd64.deb
 ENV NOMACHINE_MD5 d697e5a565507d522380c94d2f295d07
 
-# Install the mate-desktop-enviroment version you would like to have
+# Install xfce4 desktop
 RUN apt-get update -y && \
     apt-get install -y xfce4
 
