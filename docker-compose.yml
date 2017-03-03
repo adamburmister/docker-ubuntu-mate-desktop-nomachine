@@ -3,7 +3,7 @@ services:
   Desktop-1:
     cap_add:
     - SYS_PTRACE
-    image: cesarandreslopez/docker-ubuntu-mate-desktop-nomachine
+    image: adamburmister/docker-ubuntu-nomachine
     stdin_open: true
     tty: true
     ports:
